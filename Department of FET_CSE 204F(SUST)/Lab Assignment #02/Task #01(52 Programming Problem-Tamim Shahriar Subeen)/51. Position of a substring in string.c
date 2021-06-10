@@ -1,27 +1,25 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main()
+
 {
-    char a[100], b[100];
-    char *sub;
+    int T, i;
 
-    printf("Enter a string: ");
-    gets(a);
+    scanf("%d", &T);
 
-    printf("Enter substring: ");
-    gets(b);
-
-    sub = strstr(a, b);
-
-    if(sub)
+    for (i = 1; i <= T; i = i+1)
     {
-        printf("Position of substring is: %d", sub-a);
-    }
+        char a[100], b[100];
+        char *sub;
 
-    else
-    {
-        printf("Not found");
+        scanf(" %s", a);
+
+        scanf(" %[^\n]", b);
+
+        sub = strstr(a, b);
+
+        printf("%d\n\n", sub-a);
     }
 
     return 0;
