@@ -7,7 +7,7 @@ int main()
     printf("Enter intervals(Use spacebar): ");
     scanf("%d %d", &a, &b);
 
-    printf("Armstrong numbers between %d and %d are: ", a, b);
+    printf("\nPrime numbers between %d and %d are: ", a, b);
 
     for(i = a; i<= b; i = i+1)
     {
