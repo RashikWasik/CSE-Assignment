@@ -6,7 +6,7 @@ reverse case. And also print all the characters of the string.*/
 
 int main()
 {
-    int i, j = 0, length = 0;
+    int i, j = 0, length;
     char a[100];
     char upper[100], lower[100], reverse[100];
 
@@ -15,10 +15,7 @@ int main()
 
     printf("\nThe string is: %s\n", a);
 
-    while(a[length] != '\0')
-    {
-        length = length + 1; // Counts the length of the string
-    }
+    for (length = 0; a[length] != '\0'; length = length+1);
     printf("\nThe length of the string is: %d\n", length);
 
     printf("\nThe characters of the string are: ");
