@@ -1,4 +1,4 @@
-// Task #1: Write a program to print an array in reverse orde
+// Task #1: Write a program to print an array in reverse order
 
 #include <stdio.h>
 
