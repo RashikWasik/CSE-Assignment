@@ -8,13 +8,13 @@ int main()
 
     for (i = 1; i <= T; i=i+1)
     {
-        char n[101], a;
+        char a[101], n;
 
-        scanf(" %[^\n]", &n);
+        scanf(" %[^\n]", &a);
 
-        a = n[strlen(n)-1];  // Getting the last character
+        n = strlen(a);
 
-        if (a%2 != 0)
+        if (a[n-1]%2 != 0)   // a[n-1] - last character of the string
             printf("odd\n");
 
         else
