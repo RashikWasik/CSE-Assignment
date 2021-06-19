@@ -22,14 +22,13 @@ int main()
     for(i = 0; i < length; i = i+1)
         printf("%c  ",a[i]);
 
-    for(i = length-1; a[i] >= 0; i = i-1)
+    printf("\n\nReverse of the string is: ", reverse);
+    for(i = length-1; i >= 0; i = i-1)   // Reverses the string
     {
-        reverse[j] = a[i];  // Reverses the string
-        j = j + 1;
+        printf("%c", a[i]);
     }
-    printf("\n\nReverse of the string is: %s\n", reverse);
 
-    printf("\nThe uppercase of the string is: ");
+    printf("\n\nThe uppercase of the string is: ");
     for(i = 0; i < length; i = i+1)
     {
         if(a[i] >= 'a' && a[i] <= 'z')
