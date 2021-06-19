@@ -11,9 +11,9 @@ int main()
         int n, j, count=0;
         char a[10001], b[2];
 
-        scanf(" %[^\n]", &a);
+        scanf(" %[^\n]", a);
 
-        scanf("%s", &b);
+        scanf("%s", b);
 
         n = strlen(a);
 
