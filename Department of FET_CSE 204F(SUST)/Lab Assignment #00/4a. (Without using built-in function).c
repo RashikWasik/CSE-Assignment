@@ -13,54 +13,52 @@ int main()
     printf("Enter a string: ");
     gets(a);
 
+
     printf("\nThe string is: %s\n", a);
+
 
     for (length = 0; a[length] != '\0'; length = length+1);
     printf("\nThe length of the string is: %d\n", length);
+
 
     printf("\nThe characters of the string are: ");
     for(i = 0; i < length; i = i+1)
         printf("%c  ",a[i]);
 
-    printf("\n\nReverse of the string is: ", reverse);
+
+    printf("\n\nReverse of the string is: ");
     for(i = length-1; i >= 0; i = i-1)   // Reverses the string
     {
         printf("%c", a[i]);
     }
 
-    printf("\n\nThe uppercase of the string is: ");
+
     for(i = 0; i < length; i = i+1)
     {
         if(a[i] >= 'a' && a[i] <= 'z')
-        {
             upper[i] = a[i] - 32;
-            printf("%c", upper[i]);
-        }
 
         else
-        {
             upper[i] = a[i];
-            printf("%c", upper[i]);
-        }
     }
 
-    printf("\n\nThe lowercase of the string is: ");
+    upper[i] = '\0';
+
+    printf("\n\nThe uppercase of the string is: %s\n", upper);
+
+
     for(i = 0; i < length; i = i+1)
     {
         if(a[i] >= 'A' && a[i] <= 'Z')
-        {
             lower[i] = a[i] + 32;
-            printf("%c", lower[i]);
-        }
 
         else
-        {
             lower[i] = a[i];
-            printf("%c", lower[i]);
-        }
     }
 
-    printf("\n");
+    lower[i] = '\0';
+
+    printf("\nThe lowercase of the string is: %s\n", lower);
 
     return 0;
 }
