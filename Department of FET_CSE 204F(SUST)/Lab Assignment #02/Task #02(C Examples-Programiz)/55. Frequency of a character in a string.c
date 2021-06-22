@@ -11,7 +11,8 @@ int main()
     printf("Enter a character to find its frequency: ");
     scanf("%c", &b);
 
-    n = strlen(a);
+    //n = strlen(a);
+    for (n = 0; a[n] != '\0'; n = n+1);
 
     for(i=0; i<=n; i=i+1)
     {
