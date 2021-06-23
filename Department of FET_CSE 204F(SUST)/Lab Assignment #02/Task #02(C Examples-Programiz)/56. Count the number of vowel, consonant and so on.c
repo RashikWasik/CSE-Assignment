@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
     char a[100];
@@ -8,7 +9,8 @@ int main()
     printf("Enter a string: ");
     gets(a);
 
-    n = strlen(a);
+    //n = strlen(a);
+    for (n = 0; a[n] != '\0'; n = n+1);
 
     for (i = 0; i < n; i = i+1)
     {
