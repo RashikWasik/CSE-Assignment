@@ -17,7 +17,7 @@ int main()
 
         for(j = 2; j < N; j = j+1)
         {
-            if(N%i == 0)
+            if(N%j == 0)
                 flag = 1;
         }
 
