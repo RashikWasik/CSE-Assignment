@@ -20,7 +20,7 @@ int isPrime(n)
 
 int main()
 {
-    int a, b, i, flag;
+    int a, b, i, result;
 
     printf("Enter intervals(Use spacebar): ");
     scanf("%d %d", &a, &b);
@@ -29,9 +29,9 @@ int main()
 
     for(i = a; i <= b; i = i+1)
     {
-        flag = isPrime(i);
+        result = isPrime(i);
 
-        if(flag != 1)
+        if(result != 1)
             printf("%d ", i);
     }
 
@@ -39,5 +39,3 @@ int main()
 
     return 0;
 }
-
-
