@@ -2,6 +2,7 @@
 // Here I'm gonna take input from file1 and write the output to file2
 
 #include<stdio.h>
+#include<stdlib.h>
 
 int main()
 {
