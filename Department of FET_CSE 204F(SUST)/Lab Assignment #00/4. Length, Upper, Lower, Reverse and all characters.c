@@ -3,6 +3,7 @@ the string, convert the string in upper case, lower case,
 reverse case. And also print all the characters of the string.*/
 
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
