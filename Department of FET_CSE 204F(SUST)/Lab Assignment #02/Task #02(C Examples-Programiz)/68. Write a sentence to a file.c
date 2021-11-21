@@ -1,3 +1,5 @@
+// I'm gonna write "Hi, I am Rashik Wasik" in file2
+
 #include<stdio.h>
 #include<stdlib.h>
 
